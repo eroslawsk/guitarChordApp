@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/background_selector"
+    tools:context="csc212.guitarchord.ChordActivity" 
+    >
+    
+    <TableRow
+        style="@style/btnStyleBeige"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_btn_beige"
+        android:gravity="center"
+        android:padding="10dp" >
+    
+     <View 
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circleone"
+        />
+     
+     <TextView
+         android:text="@string/first_finger" 
+         android:textColor="@android:color/black">
+
+     </TextView>
+    </TableRow>
+
+ <TableRow
+     style="@style/btnStyleBeige"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="20dp"
+     android:background="@drawable/custom_btn_beige"
+     android:gravity="center"
+     android:padding="10dp" >
+
+     <View
+         android:layout_width="50dp" 
+         android:layout_height="50dp"
+         android:background="@drawable/circletwo"
+        />
+
+     <TextView
+         android:text="@string/second_finger" 
+          android:textColor="@android:color/black">
+         
+     </TextView>
+    </TableRow>   
+
+<TableRow
+    style="@style/btnStyleBeige"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/custom_btn_beige"
+    android:gravity="center"
+    android:padding="10dp" >
+
+     <View
+         android:layout_width="50dp" 
+         android:layout_height="50dp"
+         android:background="@drawable/circlethree"
+        />
+
+     <TextView
+         android:text="@string/third_finger" 
+          android:textColor="@android:color/black">
+         
+     </TextView>
+    </TableRow>
+
+    <TableRow
+        style="@style/btnStyleBeige"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_btn_beige"
+        android:gravity="center"
+        android:padding="10dp" >
+
+     <View
+         android:layout_width="50dp" 
+         android:layout_height="50dp"
+         android:background="@drawable/circlefour"
+        />
+
+     <TextView
+         android:text="@string/fourth_finger" 
+          android:textColor="@android:color/black">
+         
+     </TextView>
+    </TableRow>
+
+    <TableRow
+        style="@style/btnStyleBeige"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_btn_beige"
+        android:gravity="center"
+        android:padding="10dp" >
+
+     <View
+         android:layout_width="25dp" 
+         android:layout_height="50dp"
+         android:background="@drawable/horizrect"
+        />
+     <TextView
+         android:text="@string/barre_first_finger"
+          android:textColor="@android:color/black">
+         
+     </TextView>
+    </TableRow>
+    </LinearLayout>

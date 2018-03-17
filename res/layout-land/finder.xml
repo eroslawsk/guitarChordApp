@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="csc212.guitarchord.ChordActivity" >
+
+    <csc212.guitarchord.GraphView
+        android:id="@+id/GraphView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="60"
+        android:padding="1dp"
+        />
+    
+    <TableLayout 
+        android:background="@android:color/black"
+         android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+         >
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal|center_vertical" >
+
+            <TextView
+               android:textColor="@color/dark_blue"
+                android:id="@+id/currentChord"
+                android:gravity="center"
+                android:text="@array/chordList"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:textColor="@color/dark_blue"
+                android:id="@+id/currentMajMin"
+                android:gravity="center"
+                android:text="@array/majorMinor"
+                android:textSize="@dimen/textSize" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="10dp"
+           android:paddingLeft="20dp"
+             android:background="@color/dark_blue"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <Spinner
+                android:id="@+id/chordSpnr"
+                style="@style/btnStyleBeige"
+                android:layout_column="0"
+                android:background="@drawable/custom_btn_beige"
+                android:entries="@array/chordList"
+                android:gravity="center"
+                android:padding="10dp"
+                android:prompt="@string/choose_chord"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/darkRed" />
+
+            <Spinner
+                android:id="@+id/majMinSpnr"
+                style="@style/btnStyleBeige"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/marginSpnr"
+                android:background="@drawable/custom_btn_beige"
+                android:entries="@array/majorMinor"
+                android:gravity="center"
+                android:prompt="@string/choose_key"
+                android:padding="10dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/darkRed" />
+
+        </TableRow>
+        
+        </TableLayout>
+
+</LinearLayout>
